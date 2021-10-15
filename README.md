@@ -18,3 +18,8 @@ pip install pillow
 ```
 ## Планы
 В дальнейшем планируется графический интерфейс, но это не точно
+## Пример работы
+До:
+![1-356](https://user-images.githubusercontent.com/71257020/137526748-147e044b-f26e-4a4a-be1a-3d6dcb3e2d16.jpg)
+После:
+![1-356 jpgshakal](https://user-images.githubusercontent.com/71257020/137527948-8729596b-303b-40ed-9fcd-780e304ff389.jpg)
