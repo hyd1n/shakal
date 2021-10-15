@@ -39,9 +39,9 @@ while True:
     im_preshakal = im.resize((int(W) // int(shakalik), int(H) // int(shakalik)))  # Масштаб
     print("Сжимаю до " + str(int(W) // int(shakalik)) + "x" + str(int(H) // int(shakalik)))
     im_shakal = im_preshakal.convert('RGB')
+    im_shakal.save("out/" + photo + 'shakal' + '.jpg', quality=int(quality))  # Шакалим и сохраняем
     if settings['showimage'] == 'yes':
         im_shakal.show()
-    im_shakal.save("out/" + photo + 'shakal' + '.jpg', quality=int(quality))  # Шакалим и сохраняем
     print("Файл сохранён по пути:" + "out/" + photo + 'shakal' + '.jpg')
     sleep(1)
     os.system('cls')
