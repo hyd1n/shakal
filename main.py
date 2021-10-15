@@ -41,7 +41,8 @@ while True:
     im_shakal = im_preshakal.convert('RGB')
     im_shakal.save("out/" + photo + 'shakal' + '.jpg', quality=int(quality))  # Шакалим и сохраняем
     if settings['showimage'] == 'yes':
-        im_shakal.show()
+        showing = Image.open("out/" + photo + 'shakal' + '.jpg')  # Берём уже готовую фотку
+        showing.show() 
     print("Файл сохранён по пути:" + "out/" + photo + 'shakal' + '.jpg')
     sleep(1)
     os.system('cls')
